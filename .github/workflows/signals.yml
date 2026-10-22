@@ -26,25 +26,34 @@ jobs:
   scan:
     runs-on: ubuntu-latest
     timeout-minutes: 20
+    # Until the read-only key exists every step is skipped, so the job passes quietly
+    # instead of failing (and emailing) every 15 minutes.
+    env:
+      HAS_TOKEN: ${{ secrets.SOCIAL_READ_TOKEN != '' }}
     steps:
       - uses: actions/checkout@v4
+        if: env.HAS_TOKEN == 'true'
       # The scanner code stays in the private nepsis-social repo; only the schedule and the
       # public data live here. SOCIAL_READ_TOKEN is a read-only key for that one repo.
       - uses: actions/checkout@v4
+        if: env.HAS_TOKEN == 'true'
         with:
           repository: nepsistravel/nepsis-social
           token: ${{ secrets.SOCIAL_READ_TOKEN }}
           path: src
           sparse-checkout: feeds
       - uses: actions/setup-node@v4
+        if: env.HAS_TOKEN == 'true'
         with:
           node-version: 22
       - name: Previous feed
+        if: env.HAS_TOKEN == 'true'
         run: |
           mkdir -p data
           git fetch --depth 1 origin data 2>/dev/null && git --work-tree=data checkout origin/data -- . 2>/dev/null || true
           ls -la data
       - name: Scan
+        if: env.HAS_TOKEN == 'true'
         env:
           SCAN_MODE: ${{ github.event.inputs.mode || (github.event.schedule == '7 */3 * * *' && 'wide' || 'fast') }}
           SIGNALS_OUT: data
@@ -54,6 +63,7 @@ jobs:
           BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
         run: node src/feeds/scan.mjs 2>&1 | tail -c 8000 || true
       - name: Publish to data branch
+        if: env.HAS_TOKEN == 'true'
         run: |
           cd data
           git init -q -b data
