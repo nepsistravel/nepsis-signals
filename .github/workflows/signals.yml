@@ -1,0 +1,64 @@
+name: Signals
+
+# Public-source signal feed shared by Nepsis Travel and the Contingent hub.
+# Fast pass every 15 minutes (urgent official sources); wide pass every 3 hours (everything).
+# Runs every day. It writes data only: no Airtable, no email, no posts, and the job never
+# fails, so nothing reaches anyone's inbox. Output: the `data` branch (signals.json, health.json).
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+    - cron: '7 */3 * * *'
+  workflow_dispatch:
+    inputs:
+      mode:
+        type: choice
+        options: [fast, wide]
+        default: wide
+
+permissions:
+  contents: write
+
+concurrency:
+  group: signals
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      # The scanner code stays in the private nepsis-social repo; only the schedule and the
+      # public data live here. SOCIAL_READ_TOKEN is a read-only key for that one repo.
+      - uses: actions/checkout@v4
+        with:
+          repository: nepsistravel/nepsis-social
+          token: ${{ secrets.SOCIAL_READ_TOKEN }}
+          path: src
+          sparse-checkout: feeds
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Previous feed
+        run: |
+          mkdir -p data
+          git fetch --depth 1 origin data 2>/dev/null && git --work-tree=data checkout origin/data -- . 2>/dev/null || true
+          ls -la data
+      - name: Scan
+        env:
+          SCAN_MODE: ${{ github.event.inputs.mode || (github.event.schedule == '7 */3 * * *' && 'wide' || 'fast') }}
+          SIGNALS_OUT: data
+          RELIEFWEB_APPNAME: ${{ secrets.RELIEFWEB_APPNAME }}
+          URLHAUS_KEY: ${{ secrets.URLHAUS_KEY }}
+          BSKY_HANDLE: ${{ secrets.BSKY_HANDLE }}
+          BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
+        run: node src/feeds/scan.mjs 2>&1 | tail -c 8000 || true
+      - name: Publish to data branch
+        run: |
+          cd data
+          git init -q -b data
+          git config user.name "nepsis-signals"
+          git config user.email "hello@nepsistravel.com"
+          git add signals.json health.json
+          git commit -qm "Signals $(date -u +%FT%TZ)"
+          git push -qf "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" data
