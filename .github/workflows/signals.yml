@@ -61,6 +61,10 @@ jobs:
           URLHAUS_KEY: ${{ secrets.URLHAUS_KEY }}
           BSKY_HANDLE: ${{ secrets.BSKY_HANDLE }}
           BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
+          # Coverage additions. A source whose key is unset is skipped by the
+          # scanner, so these can be added here before the keys exist.
+          FIRMS_MAP_KEY: ${{ secrets.FIRMS_MAP_KEY }}        # NASA FIRMS, wildfire outside the U.S.
+          METEOALARM_UA: ${{ secrets.METEOALARM_UA }}        # contact string MeteoAlarm asks redistributors to send
         run: node src/feeds/scan.mjs 2>&1 | tail -c 8000 || true
       - name: Publish to data branch
         if: env.HAS_TOKEN == 'true'
