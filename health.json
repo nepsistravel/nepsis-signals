@@ -1,0 +1,190 @@
+{
+  "sources": {
+    "ReliefWeb": {
+      "consecutive_failures": 16,
+      "ok": false,
+      "last_error": "RELIEFWEB_APPNAME missing"
+    },
+    "State Dept advisories": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-10-24T18:35:57.199Z",
+      "found": 15
+    },
+    "US embassy alerts": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-10-24T18:58:46.573Z",
+      "found": 16,
+      "note": "no feed for: ky"
+    },
+    "UK FCDO travel advice": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-10-24T18:35:57.199Z",
+      "found": 1
+    },
+    "CDC travel notices": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-10-24T18:35:57.199Z",
+      "found": 3
+    },
+    "WHO outbreak news": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-10-24T18:35:57.199Z",
+      "found": 4,
+      "note": "4 WHO reports in 21 days: Ebola disease caused by Bundibugyo virus, Democratic Republic of the Congo, Kenya and Nigeria | Middle East respiratory syndrome coronavirus - Kingdom of Saudi Arabia | Pneumonia of undetermined etiology - the Russian Federation | Ebola disease caused by Bundibugyo virus - Democratic Republic of the Congo",
+      "last_error": "The operation was aborted due to timeout"
+    },
+    "CDC cruise ship outbreaks": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-10-24T18:35:57.199Z",
+      "found": 0,
+      "note": "0 outbreak voyages ending in the last 30 days"
+    },
+    "NWS alerts (U.S.)": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-10-24T18:58:46.573Z",
+      "found": 1
+    },
+    "NHC hurricanes": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-10-24T18:58:46.573Z",
+      "found": 3
+    },
+    "USGS earthquakes": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-10-24T18:58:46.573Z",
+      "found": 4
+    },
+    "GDACS": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-10-24T18:58:46.573Z",
+      "found": 1
+    },
+    "FAA airport status": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-10-24T18:35:57.199Z",
+      "found": 0
+    },
+    "News leads": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-10-24T18:35:57.199Z",
+      "found": 15
+    },
+    "Cruise port leads": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-10-24T18:35:57.199Z",
+      "found": 2
+    },
+    "Data breaches (HIBP)": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-10-24T18:35:57.199Z",
+      "found": 1
+    },
+    "FTC consumer alerts": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-10-24T18:35:57.199Z",
+      "found": 0
+    },
+    "FBI IC3 PSAs": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-10-24T18:35:57.199Z",
+      "found": 5
+    },
+    "URLhaus": {
+      "consecutive_failures": 16,
+      "ok": false,
+      "last_error": "URLHAUS_KEY missing"
+    },
+    "OpenPhish": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-10-24T18:35:57.199Z",
+      "found": 1
+    },
+    "DHS NTAS": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-10-24T18:58:46.573Z",
+      "found": 0,
+      "note": "0 NTAS items in 30 days (feed)",
+      "last_error": "403 https://www.dhs.gov/national-terrorism-advisory-system <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"http&#58;&#47;&#47;www&#46;dhs&#46;gov&#47"
+    },
+    "NWS severe alerts (all U.S.)": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-10-24T18:58:46.573Z",
+      "found": 37,
+      "note": "37 severe/extreme alerts nationwide"
+    },
+    "U.S. wildfires (NIFC)": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-10-24T18:58:46.573Z",
+      "found": 53,
+      "note": "53 active wildfires of 500+ acres",
+      "last_error": "fetch failed"
+    },
+    "Violence leads": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-10-24T18:35:57.199Z",
+      "found": 90
+    },
+    "GDELT unrest and terrorism": {
+      "consecutive_failures": 6,
+      "ok": false,
+      "last_error": "fetch failed",
+      "last_ok": "2026-10-24T00:52:07.506Z",
+      "found": 486,
+      "note": "486 GDELT articles"
+    },
+    "Faith venue incidents": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-10-24T18:35:57.199Z",
+      "found": 94,
+      "note": "94 faith-venue leads"
+    },
+    "CISA cyber alerts": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-10-24T18:35:57.199Z",
+      "found": 24,
+      "note": "24 CISA items in 3 days"
+    },
+    "Bluesky chatter": {
+      "consecutive_failures": 16,
+      "ok": false,
+      "last_error": "403 https://public.api.bsky.app/xrpc/app.bsky.feed.searchPosts <html><head><title>403 Forbidden</title><link href='//fonts.bunny.net/css?family=Rubik:300,400,500' rel='stylesheet' type='text/css'><style>html, body { widt"
+    },
+    "vendor:newsapi_ai.mjs": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-10-24T18:58:46.573Z",
+      "found": 0,
+      "note": "disabled (no key)"
+    }
+  },
+  "updated": "2026-10-24T18:58:46.573Z",
+  "failing": [
+    "ReliefWeb",
+    "URLhaus",
+    "GDELT unrest and terrorism",
+    "Bluesky chatter"
+  ]
+}
