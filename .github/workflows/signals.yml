@@ -65,6 +65,11 @@ jobs:
           # scanner, so these can be added here before the keys exist.
           FIRMS_MAP_KEY: ${{ secrets.FIRMS_MAP_KEY }}        # NASA FIRMS, wildfire outside the U.S.
           METEOALARM_UA: ${{ secrets.METEOALARM_UA }}        # contact string MeteoAlarm asks redistributors to send
+          NEWSAPI_AI_KEY: ${{ secrets.NEWSAPI_AI_KEY }}      # paid news feed (items are unverified Leads)
+          OPENAQ_KEY: ${{ secrets.OPENAQ_KEY }}
+          # Shared warehouse (public data only). Skipped by the scanner while either is unset.
+          WAREHOUSE_URL: ${{ secrets.WAREHOUSE_URL }}
+          WAREHOUSE_SERVICE_KEY: ${{ secrets.WAREHOUSE_SERVICE_KEY }}
         run: node src/feeds/scan.mjs 2>&1 | tail -c 8000 || true
       - name: Publish to data branch
         if: env.HAS_TOKEN == 'true'
