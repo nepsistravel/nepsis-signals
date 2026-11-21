@@ -1,0 +1,324 @@
+{
+  "sources": {
+    "ReliefWeb": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-11-21T19:07:58.814Z",
+      "found": 0,
+      "configured": true
+    },
+    "State Dept advisories": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-11-21T19:07:58.814Z",
+      "found": 0,
+      "configured": true
+    },
+    "US embassy alerts": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-11-21T20:02:51.074Z",
+      "found": 17,
+      "note": "no feed for: ky",
+      "configured": true
+    },
+    "UK FCDO travel advice": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-11-21T19:07:58.814Z",
+      "found": 0,
+      "configured": true
+    },
+    "CDC travel notices": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-11-21T19:07:58.814Z",
+      "found": 4,
+      "configured": true
+    },
+    "WHO outbreak news": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-11-21T19:07:58.814Z",
+      "found": 6,
+      "note": "6 WHO reports in 21 days: Ebola disease caused by Bundibugyo virus- Democratic Republic of the Congo, Kenya and Nigeria | Chikungunya virus disease - Switzerland | Middle East respiratory syndrome (MERS) – Qatar | Ebola disease caused by Bundibugyo virus, Democratic Republic of the Congo, Kenya and Nigeria | Yellow fever - WHO African Region | Shamonda virus in human - France",
+      "configured": true,
+      "last_error": "The operation was aborted due to timeout"
+    },
+    "CDC cruise ship outbreaks": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-11-21T19:07:58.814Z",
+      "found": 1,
+      "note": "1 outbreak voyages ending in the last 30 days",
+      "configured": true
+    },
+    "NWS alerts (U.S.)": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-11-21T20:02:51.074Z",
+      "found": 1,
+      "configured": true
+    },
+    "NHC hurricanes": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-11-21T20:02:51.074Z",
+      "found": 0,
+      "configured": true
+    },
+    "USGS earthquakes": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-11-21T20:02:51.074Z",
+      "found": 7,
+      "configured": true
+    },
+    "GDACS": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-11-21T20:02:51.074Z",
+      "found": 0,
+      "configured": true,
+      "last_error": "fetch failed"
+    },
+    "FAA airport status": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-11-21T20:02:51.074Z",
+      "found": 3,
+      "note": "3 airport program(s) read",
+      "configured": true
+    },
+    "National aviation news": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-11-21T20:02:51.074Z",
+      "found": 1,
+      "configured": true,
+      "last_error": "503 https://news.google.com/rss/search <html><head><meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\"/><title>Sorry...</title><style> body { font-family: verdana, arial, sans-serif; b"
+    },
+    "News leads": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-11-21T19:07:58.814Z",
+      "found": 16,
+      "configured": true
+    },
+    "Cruise port leads": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-11-21T19:07:58.814Z",
+      "found": 9,
+      "configured": true
+    },
+    "Data breaches (HIBP)": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-11-21T19:07:58.814Z",
+      "found": 2,
+      "configured": true
+    },
+    "FTC consumer alerts": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-11-21T19:07:58.814Z",
+      "found": 0,
+      "configured": true
+    },
+    "FBI IC3 PSAs": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-11-21T19:07:58.814Z",
+      "found": 0,
+      "configured": true
+    },
+    "URLhaus": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-11-21T19:07:58.814Z",
+      "found": 2,
+      "configured": true
+    },
+    "OpenPhish": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-11-21T19:07:58.814Z",
+      "found": 7,
+      "configured": true
+    },
+    "DHS NTAS": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-11-21T20:02:51.074Z",
+      "found": 0,
+      "note": "0 NTAS items in 30 days (feed)",
+      "configured": true
+    },
+    "NWS severe alerts (all U.S.)": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-11-21T20:02:51.074Z",
+      "found": 29,
+      "note": "29 severe/extreme alerts nationwide",
+      "configured": true,
+      "last_error": "503 https://api.weather.gov/alerts/active <HTML><HEAD><TITLE>Error</TITLE></HEAD><BODY>\nAn error occurred while processing your request.<p>\nReference&#32;&#35;102&#46;974ddb17&#46;1794933535&#46;3904f0c"
+    },
+    "U.S. wildfires (NIFC)": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-11-21T20:02:51.074Z",
+      "found": 48,
+      "note": "48 active wildfires of 500+ acres",
+      "configured": true,
+      "last_error": "fetch failed"
+    },
+    "Violence leads": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-11-21T19:07:58.814Z",
+      "found": 76,
+      "configured": true
+    },
+    "GDELT unrest and terrorism": {
+      "consecutive_failures": 1,
+      "ok": false,
+      "last_error": "429 https://api.gdeltproject.org/api/v2/doc/doc Please limit requests to one every 5 seconds or contact kalev.leetaru5@gmail.com for larger queries. All high-traffic users should switch to our ngrams dataset:",
+      "last_ok": "2026-11-21T10:54:22.931Z",
+      "found": 57,
+      "note": "57 GDELT articles",
+      "configured": true
+    },
+    "Faith venue incidents": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-11-21T19:07:58.814Z",
+      "found": 22,
+      "note": "22 faith-venue leads",
+      "configured": true,
+      "last_error": "429 https://news.google.com/rss/search <html><head><meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\"/><title>Sorry...</title><style> body { font-family: verdana, arial, sans-serif; b"
+    },
+    "CISA cyber alerts": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-11-21T19:07:58.814Z",
+      "found": 8,
+      "note": "8 CISA items in 3 days",
+      "configured": true
+    },
+    "Canada travel advisories": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-11-21T19:07:58.814Z",
+      "found": 19,
+      "note": "19 advisories updated in 3 days",
+      "configured": true
+    },
+    "NOAA tsunami": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-11-21T20:02:51.074Z",
+      "found": 0,
+      "note": "0 tsunami warnings, watches or advisories in 48 hours",
+      "configured": true
+    },
+    "NOAA space weather": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-11-21T19:07:58.814Z",
+      "found": 0,
+      "note": "0 severe space weather alerts in 2 days",
+      "configured": true
+    },
+    "ECDC threats report": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-11-21T19:07:58.814Z",
+      "found": 0,
+      "note": "0 weekly reports in 10 days",
+      "configured": true
+    },
+    "UK flood warnings": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-11-21T19:07:58.814Z",
+      "found": 1,
+      "note": "1 flood warnings in 2 days",
+      "configured": true,
+      "last_error": "429 https://environment.data.gov.uk/flood-monitoring/id/floods <html>\n<body>\n<p>You are making too many requests. Please try again later.</p>\n<p>If you wish to request large amounts of data please see:</p>\n<p><a href=\"ht"
+    },
+    "UK Met Office warnings": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-11-21T19:07:58.814Z",
+      "found": 0,
+      "note": "0 amber or red warnings in 3 days",
+      "configured": true
+    },
+    "Volcano activity": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-11-21T19:07:58.814Z",
+      "found": 24,
+      "note": "24 volcano reports in 10 days",
+      "configured": true
+    },
+    "UK NCSC": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-11-21T19:07:58.814Z",
+      "found": 0,
+      "note": "0 NCSC items in 3 days",
+      "configured": true
+    },
+    "Canadian Cyber Centre": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-11-21T19:07:58.814Z",
+      "found": 16,
+      "note": "16 Cyber Centre alerts in 3 days",
+      "configured": true
+    },
+    "NASA FIRMS fires": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-11-21T19:07:58.814Z",
+      "found": 0,
+      "note": "not configured (FIRMS_MAP_KEY not set)",
+      "configured": true
+    },
+    "Bluesky chatter": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-11-21T19:07:58.814Z",
+      "found": 2,
+      "note": "2 placed chatter posts",
+      "configured": true
+    },
+    "Watched events": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-11-21T19:07:58.814Z",
+      "found": 0,
+      "note": "0 event sightings",
+      "configured": true
+    },
+    "vendor:newsapi_ai.mjs": {
+      "consecutive_failures": 0,
+      "ok": true,
+      "last_ok": "2026-11-21T20:02:51.074Z",
+      "found": 0,
+      "note": "not configured (no key)",
+      "configured": false
+    }
+  },
+  "national": [
+    {
+      "title": "Sources dispute FAA’s account of oversight before nationwide ground stop - FOX 17 West Michigan News",
+      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOOXFPc1pXTEMxMjdqWUlPcGZCOUFRNUtUTS1qNjhkUEEzdTRJdWpsY1lwMkgtMzJZUmtaTnNzbVA2aTViOWZZMVFadmdEdGx0b3I5ODRNdWV3NmVuaEY5dE1qeTJSemhJS0VVT3NsaHpHYW5FSGhZUVE2b080ekpwQ1h4NURtc1NESnZUQlFjSE03enR6c25HUTRzR3RCR1ppNUFScVNHbDUzOTE1SGo5emJ0VFNEbVpfSnFKRDhoa0pobUU?oc=5",
+      "official": false
+    }
+  ],
+  "updated": "2026-11-21T20:02:51.074Z",
+  "failing": []
+}
